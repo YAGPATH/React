@@ -1,0 +1,1 @@
+**This is all about click event that we can implement in react on whatever we want**
