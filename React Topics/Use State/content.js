@@ -1,27 +1,20 @@
-
-import { useState } from 'react';
+import { useState } from "react";
 
 const Content = () => {
   const [name, setName] = useState("Let's Start");
   const [count, setCount] = useState(0);
- 
 
-    let handleNameChange = () => {
-      let names = ["vikas", "Rajan", "Akku"];
-      let int = Math.floor(Math.random() * 3);
-      setName (names[int]);
-    };
+  let handleNameChange = () => {
+    let names = ["vikas", "Rajan", "Akku"];
+    let int = Math.floor(Math.random() * 3);
+    setName(names[int]);
+  };
 
-    
+  let handleCount = () => {
+    setCount(count + 1);
+    console.log(count);
+  };
 
-
-    let handleCount = () => {
-      setCount(count+1);
-      console.log(count);
-    };
-
-    
-    
   return (
     <main>
       <p>{name}!</p>
